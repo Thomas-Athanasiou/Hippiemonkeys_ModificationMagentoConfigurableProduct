@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Thomas Athanasiou at Hippiemonkeys
+    Copyright (c) 2023 Hippiemonkeys Web Inteligence EE (https://hippiemonkeys.com)
+    Hippiemonkeys_ModificationMagentoConfigurableProduct
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <hippiemonkeys_modification>
+            <magento_configurableproduct>
+                <active>1</active>
+                <data_helper_plugin_active>0</data_helper_plugin_active>
+            </magento_configurableproduct>
+        </hippiemonkeys_modification>
+    </default>
+</config>

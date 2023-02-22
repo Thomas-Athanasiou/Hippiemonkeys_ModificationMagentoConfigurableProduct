@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+    Thomas Athanasiou at Hippiemonkeys
+    Copyright (c) 2023 Hippiemonkeys Web Inteligence EE (https://hippiemonkeys.com)
+    Hippiemonkeys_ModificationMagentoConfigurableProduct
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd">
+    <system>
+        <section id="hippiemonkeys_modification">
+            <group id="magento_configurableproduct" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1">
+                <label>Magento Configurable Product</label>
+                <field id="active" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" canRestore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="hippiemonkeys_modification/general/active">1</field>
+                    </depends>
+                </field>
+                <field id="data_helper_plugin_active" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" canRestore="1">
+                    <label>Data Helper Plugin Modification Status</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="hippiemonkeys_modification/magento_configurableproduct/active">1</field>
+                        <field id="cataloginventory/options/show_out_of_stock">1</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

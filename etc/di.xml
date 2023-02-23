@@ -2,10 +2,10 @@
 <!--
     Thomas Athanasiou at Hippiemonkeys
     Copyright (c) 2023 Hippiemonkeys Web Inteligence EE (https://hippiemonkeys.com)
-    Hippiemonkeys_ModificationMagentoConfigurableProduct
+    Hippiemonkeys_ModificationMagentoConfigurablePr
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <virtualType name="Hippiemonkeys\Modification\Helper\Config\Section\ModificationMagentoConfigurableProduct" type="Hippiemonkeys\Core\Helper\Config\Section\Group\Sub">
+    <virtualType name="Hippiemonkeys\Modification\Helper\Config\Section\ModificationMagentoConfigurablePr" type="Hippiemonkeys\Core\Helper\Config\Section\Group\Sub">
         <arguments>
             <argument name="section" xsi:type="string">hippiemonkeys_modification</argument>
             <argument name="group" xsi:type="string">magento_configurableproduct</argument>
@@ -13,23 +13,23 @@
             <argument name="parentConfig" xsi:type="object">Hippiemonkeys\Modification\Helper\Config\Section\Group\General</argument>
         </arguments>
     </virtualType>
-    <virtualType name="Hippiemonkeys\Modification\Helper\Config\Section\ModificationMagentoConfigurableProductDataPlugin" type="Hippiemonkeys\Core\Helper\Config\Section\Group\Sub">
+    <virtualType name="Hippiemonkeys\Modification\Helper\Config\Section\ModificationMagentoConfigurablePrDataPlugin" type="Hippiemonkeys\Core\Helper\Config\Section\Group\Sub">
         <arguments>
             <argument name="section" xsi:type="string">hippiemonkeys_modification</argument>
             <argument name="group" xsi:type="string">magento_configurableproduct</argument>
             <argument name="activeField" xsi:type="string">data_helper_plugin_active</argument>
-            <argument name="parentConfig" xsi:type="object">Hippiemonkeys\Modification\Helper\Config\Section\ModificationMagentoConfigurableProduct</argument>
+            <argument name="parentConfig" xsi:type="object">Hippiemonkeys\Modification\Helper\Config\Section\ModificationMagentoConfigurablePr</argument>
         </arguments>
     </virtualType>
-    <type name="Hippiemonkeys\ModificationMagentoConfigurableProduct\Plugin\DataHelperPlugin">
+    <type name="Hippiemonkeys\ModificationMagentoConfigurablePr\Plugin\DataHelperPlugin">
         <arguments>
-            <argument name="config" xsi:type="object">Hippiemonkeys\Modification\Helper\Config\Section\ModificationMagentoConfigurableProductDataPlugin</argument>
+            <argument name="config" xsi:type="object">Hippiemonkeys\Modification\Helper\Config\Section\ModificationMagentoConfigurablePrDataPlugin</argument>
         </arguments>
     </type>
     <type name="Magento\ConfigurableProduct\Helper\Data">
         <plugin
-            name="hippiemonkeysmodificationmagentoconfigurableproduct_datahelper"
-            type="Hippiemonkeys\ModificationMagentoConfigurableProduct\Plugin\DataHelperPlugin"
+            name="hippiemonkeysModificationMagentoConfigurablePr_datahelper"
+            type="Hippiemonkeys\ModificationMagentoConfigurablePr\Plugin\DataHelperPlugin"
             sortOrder="10"
             disabled="false"
         />

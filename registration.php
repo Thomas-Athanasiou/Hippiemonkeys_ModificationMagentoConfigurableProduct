@@ -7,7 +7,7 @@
      * @link https://github.com/Thomas-Athanasiou
      * @copyright Copyright (c) 2023 Hippiemonkeys Web Inteligence EE All Rights Reserved.
      * @license http://www.gnu.org/licenses/ GNU General Public License, version 3
-     * @package Hippiemonkeys_ModificationMagentoConfigurableProduct
+     * @package Hippiemonkeys_ModificationMagentoConfigurablePr
      */
 
     declare(strict_types=1);
@@ -16,7 +16,7 @@
 
     ComponentRegistrar::register(
         ComponentRegistrar::MODULE,
-        'Hippiemonkeys_ModificationMagentoConfigurableProduct',
+        'Hippiemonkeys_ModificationMagentoConfigurablePr',
         __DIR__
     );
 ?>

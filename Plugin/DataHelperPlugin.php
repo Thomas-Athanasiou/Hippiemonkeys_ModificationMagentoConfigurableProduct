@@ -7,12 +7,12 @@
      * @link https://github.com/Thomas-Athanasiou
      * @copyright Copyright (c) 2023 Hippiemonkeys Web Inteligence EE All Rights Reserved.
      * @license http://www.gnu.org/licenses/ GNU General Public License, version 3
-     * @package Hippiemonkeys_ModificationMagentoConfigurableProduct
+     * @package Hippiemonkeys_ModificationMagentoConfigurablePr
      */
 
     declare(strict_types=1);
 
-    namespace Hippiemonkeys\ModificationMagentoConfigurableProduct\Plugin;
+    namespace Hippiemonkeys\ModificationMagentoConfigurablePr\Plugin;
 
     use Magento\ConfigurableProduct\Helper\Data,
         Hippiemonkeys\Core\Api\Helper\ConfigInterface;

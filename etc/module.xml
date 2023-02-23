@@ -2,10 +2,10 @@
 <!--
     Thomas Athanasiou at Hippiemonkeys
     Copyright (c) 2023 Hippiemonkeys Web Inteligence EE (https://hippiemonkeys.com)
-    Hippiemonkeys_ModificationMagentoConfigurableProduct
+    Hippiemonkeys_ModificationMagentoConfigurablePr
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
-    <module name="Hippiemonkeys_ModificationMagentoConfigurableProduct" setup_version="1.0.0">
+    <module name="Hippiemonkeys_ModificationMagentoConfigurablePr" setup_version="1.0.0">
         <sequence>
             <module name="Magento_Modification" />
             <module name="Magento_ConfigurableProduct" />
